@@ -3,6 +3,9 @@
 .env.local
 .env.*.local
 
+# Local config with API keys
+frontend/src/constants/config.ts
+
 # Python
 __pycache__/
 *.pyc
