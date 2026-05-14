@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "input=$(cat); cmd=$(echo \"$input\" | jq -r '.tool_input.command // \"\"'); if echo \"$cmd\" | grep -qE '^git push'; then cd /Users/kanakbisht/ClaudeCodeProjects/ParkingLocator && bash .git/hooks/pre-push <<< \"\" ; fi",
+            "timeout": 15,
+            "statusMessage": "Scanning for secrets before push..."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -6,6 +6,9 @@
 # Local config with API keys
 frontend/src/constants/config.ts
 
+# Claude Code local settings
+.claude/settings.local.json
+
 # Python
 __pycache__/
 *.pyc
