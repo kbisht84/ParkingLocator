@@ -6,7 +6,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "test": "jest --watchAll",
+    "test:ci": "jest --coverage --ci"
   },
   "dependencies": {
     "axios": "^1.16.1",
@@ -19,7 +21,12 @@
     "react-native-safe-area-context": "^5.6.0"
   },
   "devDependencies": {
+    "@testing-library/react-native": "^13.3.3",
+    "@types/jest": "^29.5.14",
     "@types/react": "~19.1.0",
+    "babel-preset-expo": "^56.0.14",
+    "jest-expo": "~54.0.5",
+    "react-test-renderer": "^19.1.0",
     "typescript": "~5.9.2"
   },
   "private": true
